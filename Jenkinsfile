@@ -7,7 +7,7 @@ pipeline {
 source ~/vault.sh
 cd tfe_setup
 terraform init
-terraform apply -auto-approve -var organization=SentinelTesting'''
+terraform apply -auto-approve'''
       }
     }
     stage('Policy Pass') {
