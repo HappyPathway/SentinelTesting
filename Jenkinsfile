@@ -10,5 +10,13 @@ terraform init
 terraform apply -auto-approve -var organization=SentinelTesting'''
       }
     }
+    stage('Policy Pass') {
+      steps {
+        sh '''source ~/vault.sh
+cd pass
+terraform apply
+'''
+      }
+    }
   }
 }
