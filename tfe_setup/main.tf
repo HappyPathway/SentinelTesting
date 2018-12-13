@@ -1,4 +1,4 @@
-provider "vault" {}
+
 
 resource "tfe_sentinel_policy" "instance_type" {
   name = "instance-size-test"
