@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''cd tfe_setup
 terraform init
-terraform apply -auto-approve'''
+terraform apply -auto-approve -var organization=SentinelTesting'''
       }
     }
   }
