@@ -15,7 +15,8 @@ terraform apply -auto-approve'''
         sh '''source ~/vault.sh
 cd pass
 terraform apply
-'''
+
+# pass'''
       }
     }
   }
