@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Create Terraform Workspace and Polices') {
       steps {
-        sh 'cd tfe_setup; terraform apply -auto-approve'
+        sh '''cd tfe_setup
+terraform init
+terraform apply -auto-approve'''
       }
     }
   }
